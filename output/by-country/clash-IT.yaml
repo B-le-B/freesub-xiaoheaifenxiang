@@ -30,7 +30,7 @@ proxies:
     public-key: R5ycsjJ-v024902dMSqTsSdqxUwCFEXMebdBEWFt9VU
     short-id: cd6065902eea7a02
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇮🇹 意大利 (Italy) 04 - xiaohe
   server: 57.131.38.163
   port: 2053
@@ -42,7 +42,7 @@ proxies:
     public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
     short-id: 5b8a942318178e7b
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇮🇹 意大利 (Italy) 05 - xiaohe
   server: 91.201.65.122
   port: 9092
