@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  server: 62.109.12.234
-  port: 2055
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: WxYpOK1iPSJySbVNMMJDtw
-- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   server: 91.240.86.70
   port: 22443
   udp: true
@@ -19,6 +12,17 @@ proxies:
   password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
   sni: itsallproxy.quattro-tech.ru
   skip-cert-verify: true
+- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
+  server: 104.21.76.194
+  port: 443
+  udp: true
+  type: trojan
+  password: Telegram_healer_config
+  sni: X8xus4X7UTZMDozv2.bZuH25LZINNeTwTOcXYIcx.WORkERs.deV
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /tr/nDuppKYyUqsEcG0rcQEg5sghG0?ed
 - name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   server: 45.12.75.242
   port: 26424
@@ -31,20 +35,6 @@ proxies:
     short-id: 23103e1e
   servername: ya.ru
   client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
-  server: 176.109.106.182
-  port: 9881
-  udp: true
-  type: vless
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-  tls: true
-  reality-opts:
-    public-key: Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0
-  servername: dl.google.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
 proxy-groups:
 - name: PROXIES
   type: select
@@ -53,7 +43,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -62,6 +51,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
 rules:
 - MATCH,PROXIES
