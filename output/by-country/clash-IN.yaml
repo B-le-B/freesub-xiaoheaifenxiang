@@ -28,19 +28,6 @@ proxies:
     headers:
       Host: 13.140.56.100
 - name: 🇮🇳 印度 (India) 03 - xiaohe
-  server: 140.245.28.182
-  port: 443
-  udp: true
-  type: vless
-  uuid: acaaa258-e833-490b-a330-db4b97d605aa
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: sE7iHMdyFUNBBSGfqDm_XdIIgeEv734REAGl6oP-XAQ
-    short-id: 6c782575
-  servername: updates.cdn-apple.com
-  client-fingerprint: ios
-- name: 🇮🇳 印度 (India) 04 - xiaohe
   server: 152.67.8.205
   port: 80
   udp: true
@@ -51,6 +38,12 @@ proxies:
   network: ws
   ws-opts:
     path: /
+- name: 🇮🇳 印度 (India) 04 - xiaohe
+  server: 5.253.29.254
+  port: 10443
+  udp: true
+  type: vless
+  uuid: c7c27192-60a5-4ce1-b613-95270d82309d
 proxy-groups:
 - name: PROXIES
   type: select
