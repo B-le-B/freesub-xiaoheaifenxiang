@@ -12,7 +12,7 @@
       "tls": {
         "enabled": true,
         "server_name": "connectwithemployerstohireyouridealteam.com",
-        "insecure": false
+        "insecure": true
       }
     },
     {
@@ -24,7 +24,7 @@
       "tls": {
         "enabled": true,
         "server_name": "au.tronsg.com",
-        "insecure": false
+        "insecure": true
       }
     },
     {
@@ -39,7 +39,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
